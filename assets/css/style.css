@@ -1,0 +1,273 @@
+:root {
+    --primary-color: #070707;
+    --secondary-color: #616161;
+    --tertiary-color: #ade8f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(7,7,7);
+    background: linear-gradient(0deg, rgba(7,7,7,1) 0%, rgba(97,97,97,1) 35%, rgba(7,7,7,1) 100%);
+    color: var(--secondary-color);
+}
+
+/*HEADER START*/
+header {
+    background: var(--primary-color);
+    padding: 15px 10px 15px 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 10px 10px 100px;
+    border: 1px solid --secondary-color;
+    font-family: cursive;
+    margin: 0;
+    font-weight: lighter;
+}
+
+
+
+header nav {
+    margin: 7px 0;
+    padding: 20px 40px;
+    font-size: 1.25vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.25vw;
+    color: var(--tertiary-color);
+}
+
+header nav ul li a:visited {
+    color: var(--tertiary-color);
+}
+/*HEADER ENDS*/
+
+
+/*FOOTER STARTS*/
+footer {
+    margin: 60px 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+/* FOOTER ENDS */
+
+
+/*HERO START*/
+.hero img {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+}
+
+/*HERO END*/
+
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ABOUT ME */
+.container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    /* margin: 100px 90px 70px 200px; */
+}
+
+.about-me section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section h2 {
+display: flex;
+justify-content: center;
+padding-top: 50px;
+text-align: right;
+width: 100px;
+font-weight: lighter;
+font-size: 36px;
+}
+
+
+.right {
+    flex: 1;
+    line-height: 1.7;
+    font-size: 18px;
+    margin-left: 30px;
+    border-left: 1px solid var(--secondary-color);
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.about-me span {
+    font-family: monospace;
+}
+
+
+.work {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* margin: 100px 90px 70px 200px; */
+}
+
+/*.work .right {
+    margin-left: 40px;
+}*/
+
+.work img {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    width: 50%;
+    max-width: 100%;
+    /* margin-left: 30px; */
+}
+
+.img-background {
+    width: 100%;
+    height: 550px;
+    background-image: url("./../images/runbuddy.fixed.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 15px solid var(--tertiary-color);
+    border-radius: 10px;
+}
+
+.text {
+    background-color: #070707;
+    display: inline-block;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 1px;
+}
+
+.text h2 {
+    padding-top: 0;
+}
+
+
+.secondary {
+    flex: 2 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+    margin-top: 30px;
+}
+
+.secondary h2, .secondary p {
+    text-align: center;
+}
+
+.secondary > div {
+    position: relative;
+    width: 48%;
+    height: 200px;
+    border: 15px solid var(--tertiary-color);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.secondary .box:nth-child(1) {
+    background-image: url("./../images/get-up.jpg");
+    background-position-y: -30px;
+}
+
+.secondary .box:nth-child(2) {
+    background-image: url("./../images/js-book.jpg");
+    background-position-x: 80px;
+    background-position-y: -60px;
+}
+
+.secondary .box:nth-child(3) {
+    background-image: url("./../images/calc.jpg");
+    background-position-x: 60px;
+    background-position-y: -50px;
+}
+
+.secondary .box:nth-child(4) {
+    background-image: url("./../images/led.jpg");
+}
+
+.secondary .text {
+    transform: translateY(-50%);
+    left: -1px;
+}
+
+/* CONTACT ME STARTS */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 15px 10px 15px 0;
+    margin-bottom: 20px;
+}
+
+
+.contact-info a {
+    color: #ade8f4;
+    text-decoration: none;
+    border-bottom: 1px solid #ade8f4;
+    display: flex;
+}
+
+.contact-info a:visited {
+    color: #ade8f4;
+}
+
+
+.contact-info ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1.25vw;
+}
+
+.contact-info ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+
+/* UTILITIES */
