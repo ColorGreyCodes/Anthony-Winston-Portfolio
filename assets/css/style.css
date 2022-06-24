@@ -57,7 +57,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    margin: 10px 15px;
     font-size: 1.25vw;
     color: var(--tertiary-color);
 }
@@ -79,6 +79,9 @@ footer p {
 }
 /* FOOTER ENDS */
 
+.main-h2 {
+    font-size: 36px;
+}
 
 /*HERO START*/
 .hero img {
@@ -119,18 +122,32 @@ padding-top: 50px;
 text-align: right;
 width: 100px;
 font-weight: lighter;
-font-size: 36px;
 }
 
 
 .right {
-    flex: 1;
+    flex: 2 70%;
     line-height: 1.7;
     font-size: 18px;
     margin-left: 30px;
     border-left: 1px solid var(--secondary-color);
     padding: 30px;
     margin-top: 40px;
+}
+
+.selfie img {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+    height: 300px;
+    border-radius: 10px;
+    float: left;
+}
+
+.about-me-text p {
+    display: flex;
+    justify-content: left;
+    padding: 30px 40px 0 40px;
 }
 
 .about-me span {
@@ -160,8 +177,8 @@ font-size: 36px;
 
 .img-background {
     width: 100%;
-    height: 550px;
-    background-image: url("./../images/runbuddy.fixed.png");
+    height: 520px;
+    background-image: url("./../images/runnbuddy.fixed.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: relative;
@@ -172,7 +189,7 @@ font-size: 36px;
 .text {
     background-color: #070707;
     display: inline-block;
-    padding: 25px;
+    padding: 10px;
     position: absolute;
     top: 50%;
     left: 1px;
@@ -192,6 +209,7 @@ font-size: 36px;
     margin-top: 30px;
 }
 
+
 .secondary h2, .secondary p {
     text-align: center;
 }
@@ -206,7 +224,7 @@ font-size: 36px;
 }
 
 .secondary .box:nth-child(1) {
-    background-image: url("./../images/get-up.jpg");
+    background-image: url("./../images/Horiseon-screenshot.png");
     background-position-y: -30px;
 }
 
@@ -267,7 +285,3 @@ font-size: 36px;
     justify-content: space-between;
     padding: 0 20px;
 }
-
-
-
-/* UTILITIES */
