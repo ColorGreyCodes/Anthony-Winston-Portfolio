@@ -142,6 +142,7 @@ font-weight: lighter;
     height: 300px;
     border-radius: 10px;
     float: left;
+    background-image: url(./../images/anthony-with-camera.jpeg);
 }
 
 .about-me-text p {
